@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background color: pink ;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-image: url('.vscode/sun.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;   
+    box-shadow: 0 8px 32px rgb(11, 236, 218);
+    border: 1px solid rgba(248, 2, 174, 0.973);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1{
+    font-size: 2em;
+    color: rgb(231, 17, 231);
+    text-align: center;
+    padding: 70px;
+    margin-top: 4px;
+    justify-content: center;
+    align-items:center.container {
+        width: 80%;
+        margin: 20px auto;
+    };
+}
+
+
+.remember-forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+.remember-forget label input{
+    accent-color: red;
+    margin-top: 3px;
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    background: red;
+    border: none;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+.input-box{
+    padding: 0;
+    color: black;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.records {
+    margin-top: 20px;
+}
+
+.record {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

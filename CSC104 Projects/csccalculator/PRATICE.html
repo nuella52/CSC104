@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="practies.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="form-group">
+            <h2>Simple Interest Calculator</h2>
+            <label for="simplePrincipal">Principal Amount:</label>
+            <input type="number" id="simplePrincipal" required>
+            <label for="simpleRate">Annual Interest Rate (%):</label>
+            <input type="number" id="simpleRate" required>
+            <label for="simpleTime">Time (years):</label>
+            <input type="number" id="simpleTime" required>
+            <button class="btn" onclick="calculateSimpleInterest()">Calculate</button>
+            <div id="output"></div>
+        </div>
+
+        <div class="form-group">
+            <h2>Compound Interest Calculator</h2>
+            <label for="compoundPrincipal">Principal Amount:</label>
+            <input type="number" id="compoundPrincipal" required>
+            <label for="compoundRate">Annual Interest Rate (%):</label>
+            <input type="number" id="compoundRate" required>
+            <label for="compoundTime">Time (years):</label>
+            <input type="number" id="compoundTime" required>
+            <button class="btn" onclick="calculateCompoundInterest()">Calculate</button>
+            <div id="compoundOutput"></div>
+        </div>
+           
+            <div class="converter">
+                <h2>Dollar to Naira Conversion</h2>
+                <label for="usdAmount">Enter amount in USD:</label>
+                <input type="number" id="usdAmount" placeholder="Enter amount">
+                <button  class="btn" onclick="convertToNaira()">Convert</button>
+
+                <div id="result">
+        </div>
+
+        <div class="form-group">
+            <h2>Fahrenheit to Celsius Conversion</h2>
+            <input type="number" id="fahrenheitInput" placeholder="Enter Fahrenheit temperature">
+<button class="btn" onclick="convertToFahrenheit()">Convert</button>
+<div class="result"></div>
+
+        </div>
+
+        <div class="form-group">
+            <h2>GPA Calculator</h2>
+            <label for="grade">Grade:</label>
+            <input type="number" id="grade" min="0" max="100" placeholder="Enter grade (0-100)">
+            <br>
+            <label for="credit">Credit Hours:</label>
+            <input type="number" id="credit" min="0" placeholder="Enter credit hours">
+            <br>
+            <button onclick="calculateGPA()">Add Course</button>
+            <br><br>
+            <p id="result"></p>
+        </div>
+        <div class="result" id="resultContainer"></div>
+    </div>
+</body>
+</html>
